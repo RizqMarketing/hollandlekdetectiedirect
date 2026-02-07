@@ -100,17 +100,17 @@ const ServiceHero = ({ title, subtitle, description, icon: Icon, gradient, stats
           </div>
 
           {/* Right Column - Image */}
-          <div className="relative hidden lg:block animate-fade-up" style={{ animationDelay: "0.3s" }}>
+          <div className="relative animate-fade-up" style={{ animationDelay: "0.3s" }}>
             <div className="relative">
               {/* Decorative glow behind image */}
               <div className="absolute -inset-6 bg-gradient-cta rounded-3xl opacity-[0.08] blur-2xl" />
 
               {/* Corner accents */}
-              <div className="absolute -top-3 -left-3 w-24 h-24 border-t-[3px] border-l-[3px] border-ocean-medium/60 rounded-tl-3xl" />
-              <div className="absolute -bottom-3 -right-3 w-24 h-24 border-b-[3px] border-r-[3px] border-ocean-light/50 rounded-br-3xl" />
+              <div className="hidden lg:block absolute -top-3 -left-3 w-24 h-24 border-t-[3px] border-l-[3px] border-ocean-medium/60 rounded-tl-3xl" />
+              <div className="hidden lg:block absolute -bottom-3 -right-3 w-24 h-24 border-b-[3px] border-r-[3px] border-ocean-light/50 rounded-br-3xl" />
 
               {/* Image Container */}
-              <div className="relative w-full h-[520px] rounded-2xl overflow-hidden shadow-elevated">
+              <div className="relative w-full h-64 sm:h-80 lg:h-[520px] rounded-2xl overflow-hidden shadow-elevated">
                 <img
                   src={image}
                   alt={imageAlt}
@@ -119,23 +119,23 @@ const ServiceHero = ({ title, subtitle, description, icon: Icon, gradient, stats
                 <div className="absolute inset-0 bg-gradient-to-t from-foreground/30 via-foreground/5 to-transparent" />
 
                 {/* Overlay badge on image */}
-                <div className="absolute bottom-5 left-5 right-5 bg-card/85 backdrop-blur-xl rounded-2xl p-5 border border-white/20 shadow-elevated">
-                  <div className="flex items-center gap-4">
-                    <div className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${gradient} flex items-center justify-center shadow-lg ring-4 ring-white/10`}>
-                      <Icon className="w-7 h-7 text-white" />
+                <div className="absolute bottom-4 left-4 right-4 lg:bottom-5 lg:left-5 lg:right-5 bg-card/85 backdrop-blur-xl rounded-xl lg:rounded-2xl p-4 lg:p-5 border border-white/20 shadow-elevated">
+                  <div className="flex items-center gap-3 lg:gap-4">
+                    <div className={`w-11 h-11 lg:w-14 lg:h-14 rounded-xl lg:rounded-2xl bg-gradient-to-br ${gradient} flex items-center justify-center shadow-lg ring-4 ring-white/10`}>
+                      <Icon className="w-6 h-6 lg:w-7 lg:h-7 text-white" />
                     </div>
-                    <div className="flex-1">
-                      <div className="font-display font-bold text-foreground text-lg">{title}</div>
+                    <div className="flex-1 min-w-0">
+                      <div className="font-display font-bold text-foreground text-base lg:text-lg truncate">{title}</div>
                       <div className="text-sm text-muted-foreground">Professionele inspectie & rapportage</div>
                     </div>
-                    <CheckCircle2 className="w-6 h-6 text-green-500 flex-shrink-0" />
+                    <CheckCircle2 className="w-5 h-5 lg:w-6 lg:h-6 text-green-500 flex-shrink-0" />
                   </div>
                 </div>
               </div>
             </div>
 
             {/* Floating Card - 24/7 Spoedservice */}
-            <div className="absolute -left-6 top-10 animate-fade-up" style={{ animationDelay: "0.5s" }}>
+            <div className="absolute -left-6 top-10 hidden lg:block animate-fade-up" style={{ animationDelay: "0.5s" }}>
               <div className="relative bg-gradient-to-br from-ocean-deep to-ocean-medium rounded-2xl p-5 shadow-elevated max-w-[210px]">
                 {/* Shimmer effect */}
                 <div className="absolute inset-0 rounded-2xl overflow-hidden">
