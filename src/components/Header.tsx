@@ -62,16 +62,16 @@ const Header = () => {
         {isMenuOpen && (
           <div className="lg:hidden py-4 border-t border-border/50 animate-fade-up">
             <nav className="flex flex-col gap-4">
-              <a href="/#diensten" className="text-foreground font-medium py-2">
+              <a href="/#diensten" onClick={() => setIsMenuOpen(false)} className="text-foreground font-medium py-2">
                 Diensten
               </a>
-              <a href="/#werkwijze" className="text-foreground font-medium py-2">
+              <a href="/#werkwijze" onClick={() => setIsMenuOpen(false)} className="text-foreground font-medium py-2">
                 Werkwijze
               </a>
-              <a href="/#over-ons" className="text-foreground font-medium py-2">
+              <a href="/#over-ons" onClick={() => setIsMenuOpen(false)} className="text-foreground font-medium py-2">
                 Over Ons
               </a>
-              <a href="/#contact" className="text-foreground font-medium py-2">
+              <a href="/#contact" onClick={() => setIsMenuOpen(false)} className="text-foreground font-medium py-2">
                 Contact
               </a>
               <div className="pt-4 flex flex-col gap-3">
