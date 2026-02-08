@@ -1,4 +1,4 @@
-import { Droplets, Phone, Mail, MapPin } from "lucide-react";
+import { Phone, Mail, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -8,13 +8,12 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {/* Brand Column */}
           <div className="lg:col-span-1">
-            <Link to="/" className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-xl bg-gradient-cta flex items-center justify-center">
-                <Droplets className="w-5 h-5 text-primary-foreground" />
-              </div>
-              <span className="font-display font-bold text-xl text-primary-foreground">
-                Holland Lekdetectie <span className="text-ocean-light">Direct</span>
-              </span>
+            <Link to="/" className="flex items-center mb-4">
+              <img
+                src="/logo.png"
+                alt="Holland Lekdetectie Direct"
+                className="h-44 w-auto"
+              />
             </Link>
             <p className="text-primary-foreground/70 leading-relaxed mb-6">
               Specialist in daklekkages en lekdetectie in heel Nederland.
