@@ -21,7 +21,13 @@
       "Bash(del \"C:\\\\Users\\\\mazin\\\\Lekdetectie Website\\\\public\\\\thermo_test1.jpg\" \"C:\\\\Users\\\\mazin\\\\Lekdetectie Website\\\\public\\\\thermo_test2.jpg\" \"C:\\\\Users\\\\mazin\\\\Lekdetectie Website\\\\public\\\\thermo_test3.jpg\" \"C:\\\\Users\\\\mazin\\\\Lekdetectie Website\\\\public\\\\endo_test1.jpg\" \"C:\\\\Users\\\\mazin\\\\Lekdetectie Website\\\\public\\\\endo_test2.jpg\")",
       "Bash(git init:*)",
       "Bash(git add:*)",
-      "Bash(git commit -m \"$\\(cat <<''EOF''\nInitial commit: Holland Lekdetectie Direct website\n\nComplete website with homepage and 4 service pages \\(Daklekkage, Waterlekkage, Thermografie, Endoscopie\\).\nIncludes SEO optimization, JSON-LD structured data, responsive design, and conversion-focused layout.\n\nCo-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>\nEOF\n\\)\")"
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nInitial commit: Holland Lekdetectie Direct website\n\nComplete website with homepage and 4 service pages \\(Daklekkage, Waterlekkage, Thermografie, Endoscopie\\).\nIncludes SEO optimization, JSON-LD structured data, responsive design, and conversion-focused layout.\n\nCo-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git branch:*)",
+      "Bash(git remote add:*)",
+      "Bash(git push:*)",
+      "WebFetch(domain:imgur.com)",
+      "Bash(git commit:*)",
+      "Bash(python:*)"
     ]
   }
 }

@@ -189,7 +189,7 @@ export const services: ServiceData[] = [
       },
     ],
     stats: [
-      { value: "5.000+", label: "Daklekkages opgespoord" },
+      { value: "1.500+", label: "Tevreden klanten" },
       { value: "< 2 uur", label: "Gemiddelde inspectietijd" },
       { value: "98%", label: "Succespercentage" },
     ],
@@ -316,7 +316,7 @@ export const services: ServiceData[] = [
       },
     ],
     stats: [
-      { value: "3.500+", label: "Waterlekken gevonden" },
+      { value: "1.500+", label: "Tevreden klanten" },
       { value: "10cm", label: "Nauwkeurigheid" },
       { value: "97%", label: "Eerste keer raak" },
     ],
@@ -570,7 +570,7 @@ export const services: ServiceData[] = [
       },
     ],
     stats: [
-      { value: "1.500+", label: "Inspecties uitgevoerd" },
+      { value: "1.500+", label: "Tevreden klanten" },
       { value: "6mm", label: "Kleinste cameradiameter" },
       { value: "100%", label: "Non-destructief" },
     ],

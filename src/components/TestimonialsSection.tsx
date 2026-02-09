@@ -37,7 +37,7 @@ const TestimonialsSection = () => {
             </div>
             <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground">
               Meer dan{" "}
-              <span className="text-gradient-ocean">5.000 tevreden</span>
+              <span className="text-gradient-ocean">1.500+ tevreden</span>
               {" "}klanten
             </h2>
           </div>

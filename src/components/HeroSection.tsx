@@ -77,7 +77,7 @@ const HeroSection = () => {
             <div className="flex items-center gap-8 lg:gap-12 mt-14 pt-8 border-t border-border/50 animate-fade-up" style={{ animationDelay: '0.5s' }}>
               {[
                 { value: "15+", label: "Jaar ervaring" },
-                { value: "5.000+", label: "Daklekkages verholpen" },
+                { value: "1.500+", label: "Tevreden klanten" },
                 { value: "4.9★", label: "Klantwaardering" },
               ].map((stat, i) => (
                 <div key={i} className="text-center sm:text-left">
