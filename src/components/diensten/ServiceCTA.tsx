@@ -1,11 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { Phone, Mail, ArrowRight, MapPin, Clock } from "lucide-react";
+import { useContactForm } from "@/components/ContactFormModal";
 
 interface ServiceCTAProps {
   serviceName: string;
 }
 
 const ServiceCTA = ({ serviceName }: ServiceCTAProps) => {
+  const { openContactForm } = useContactForm();
   return (
     <section id="contact-section" className="py-24 lg:py-32 bg-gradient-cta relative overflow-hidden">
       {/* Background decoration */}
@@ -68,12 +70,10 @@ const ServiceCTA = ({ serviceName }: ServiceCTAProps) => {
             <Button
               size="xl"
               className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 shadow-elevated group h-16 px-12 text-lg"
-              asChild
+              onClick={openContactForm}
             >
-              <a href="tel:0800-1234567">
-                <span>Vraag Gratis Inspectie Aan</span>
-                <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
-              </a>
+              <span>Vraag Gratis Inspectie Aan</span>
+              <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
             </Button>
 
             <p className="mt-6 text-primary-foreground/50 text-sm flex items-center justify-center gap-2">

@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Shield, Clock, CheckCircle2, ArrowRight, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import type { LucideIcon } from "lucide-react";
+import { useContactForm } from "@/components/ContactFormModal";
 
 interface ServiceHeroProps {
   title: string;
@@ -15,6 +16,7 @@ interface ServiceHeroProps {
 }
 
 const ServiceHero = ({ title, subtitle, description, icon: Icon, gradient, stats, image, imageAlt }: ServiceHeroProps) => {
+  const { openContactForm } = useContactForm();
   return (
     <section className="relative min-h-[85vh] bg-gradient-hero overflow-hidden pt-20 lg:pt-24">
       {/* Animated background */}
@@ -77,11 +79,9 @@ const ServiceHero = ({ title, subtitle, description, icon: Icon, gradient, stats
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-up" style={{ animationDelay: "0.4s" }}>
-              <Button variant="hero" size="xl" className="group" asChild>
-                <a href="#contact-section">
-                  <span>Gratis Inspectie Aanvragen</span>
-                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                </a>
+              <Button variant="hero" size="xl" className="group" onClick={openContactForm}>
+                <span>Gratis Inspectie Aanvragen</span>
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
               <Button variant="outline" size="xl" asChild>
                 <a href="tel:0800-1234567">Bel Direct: 0800-1234567</a>

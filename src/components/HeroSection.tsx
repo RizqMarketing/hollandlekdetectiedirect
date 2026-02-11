@@ -1,7 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Shield, Clock, CheckCircle2, ArrowRight, Droplets } from "lucide-react";
+import { useContactForm } from "@/components/ContactFormModal";
 
 const HeroSection = () => {
+  const { openContactForm } = useContactForm();
   return (
     <section className="relative min-h-screen bg-gradient-hero overflow-hidden pt-20 lg:pt-24">
       {/* Animated water background */}
@@ -64,7 +66,7 @@ const HeroSection = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-up" style={{ animationDelay: '0.4s' }}>
-              <Button variant="hero" size="xl" className="group">
+              <Button variant="hero" size="xl" className="group" onClick={openContactForm}>
                 <span>Gratis Inspectie Aanvragen</span>
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>

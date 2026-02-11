@@ -1,9 +1,11 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone } from "lucide-react";
+import { useContactForm } from "@/components/ContactFormModal";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { openContactForm } = useContactForm();
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/50">
@@ -40,7 +42,7 @@ const Header = () => {
               <Phone className="w-4 h-4" />
               <span className="font-medium">0800-1234567</span>
             </a>
-            <Button variant="hero" size="default">
+            <Button variant="hero" size="default" onClick={openContactForm}>
               Gratis Inspectie
             </Button>
           </div>
@@ -76,7 +78,7 @@ const Header = () => {
                   <Phone className="w-4 h-4" />
                   <span className="font-medium">0800-1234567</span>
                 </a>
-                <Button variant="hero" className="w-full">
+                <Button variant="hero" className="w-full" onClick={() => { setIsMenuOpen(false); openContactForm(); }}>
                   Gratis Inspectie
                 </Button>
               </div>
