@@ -76,8 +76,8 @@ const Footer = () => {
               <li className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 text-ocean-light flex-shrink-0 mt-1" />
                 <div>
-                  <div className="text-primary-foreground font-medium">Heel Nederland</div>
-                  <div className="text-primary-foreground/50 text-sm">Wij komen naar u toe</div>
+                  <div className="text-primary-foreground font-medium">Molenstraat 25, Herpen</div>
+                  <div className="text-primary-foreground/50 text-sm">Werkzaam in heel Nederland</div>
                 </div>
               </li>
             </ul>

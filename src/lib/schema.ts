@@ -12,6 +12,12 @@ export function generateServiceSchema(service: ServiceData) {
       name: "Holland Lekdetectie Direct",
       telephone: "0800-1234567",
       email: "info@hollandlekdetectie.nl",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "Molenstraat 25",
+        addressLocality: "Herpen",
+        addressCountry: "NL",
+      },
       areaServed: {
         "@type": "Country",
         name: "Nederland",
