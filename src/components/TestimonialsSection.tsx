@@ -2,22 +2,19 @@ import { Quote, Star } from "lucide-react";
 
 const testimonials = [
   {
-    quote: "Ons dak lekte al maanden en niemand kon de oorzaak vinden. Holland Lekdetectie Direct kwam langs met een warmtecamera en had het probleem binnen een uur gelokaliseerd. Top service!",
-    author: "Jan de Vries",
-    location: "Amsterdam",
-    avatar: "JV",
+    quote: "Goed werk geleverd ook netjes achtergelaten na het werk, tevreden.",
+    author: "Aleksandar",
+    avatar: "A",
   },
   {
-    quote: "Na een zware storm had ons dak schade. Holland Lekdetectie Direct reageerde dezelfde dag nog en vond snel de oorzaak. Zeer professioneel rapport met duidelijke foto's ontvangen.",
-    author: "Maria Jansen",
-    location: "Rotterdam",
-    avatar: "MJ",
+    quote: "Zeer tevreden over het geleverde werk, alles netjes op tijd af. Vakmensen met oog voor detail.",
+    author: "Naim",
+    avatar: "N",
   },
   {
-    quote: "Vochtplekken op zolder bleken een daklekkage te zijn. Dankzij de grondige inspectie van Holland Lekdetectie Direct is alles snel en vakkundig verholpen. Echte specialisten!",
-    author: "Peter van den Berg",
-    location: "Utrecht",
-    avatar: "PB",
+    quote: "Goed bereikbaar, klantvriendelijk en vakwerk geleverd. Complimenten!",
+    author: "Arafat",
+    avatar: "A",
   },
 ];
 
@@ -50,7 +47,7 @@ const TestimonialsSection = () => {
                   <Star key={star} className="w-5 h-5 text-amber-400 fill-current" />
                 ))}
               </div>
-              <div className="text-sm text-muted-foreground">4.9 uit 500+ reviews</div>
+              <div className="text-sm text-muted-foreground">4,9 klantwaardering</div>
             </div>
             <img 
               src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" 
@@ -95,7 +92,6 @@ const TestimonialsSection = () => {
                 </div>
                 <div>
                   <div className="font-semibold text-foreground">{testimonial.author}</div>
-                  <div className="text-sm text-muted-foreground">{testimonial.location}</div>
                 </div>
               </div>
             </div>

@@ -9,6 +9,7 @@ import ServiceFAQ from "@/components/diensten/ServiceFAQ";
 import ServiceCTA from "@/components/diensten/ServiceCTA";
 import RelatedServices from "@/components/diensten/RelatedServices";
 import TrustSection from "@/components/TrustSection";
+import TestimonialsSection from "@/components/TestimonialsSection";
 import { getServiceBySlug } from "@/data/services";
 import { generateServiceSchema, generateFAQSchema, generateBreadcrumbSchema } from "@/lib/schema";
 
@@ -46,6 +47,7 @@ const WaterlekkageOpsporing = () => {
         <ServiceProcess steps={service.processSteps} gradient={service.gradient} />
         <ServiceBenefits benefits={service.benefits} serviceName={service.title} gradient={service.gradient} />
         <ServiceFAQ faqs={service.faqs} serviceName={service.title} />
+        <TestimonialsSection />
         <ServiceCTA serviceName={service.title} />
         <RelatedServices currentSlug={service.slug} />
       </main>
